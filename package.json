@@ -19,5 +19,12 @@
     "dev": "npx live-server --open=test"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "monaco-editor": "^0.18.1",
+    "monaco-editor-esm": "^0.17.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
