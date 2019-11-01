@@ -17,7 +17,8 @@
   "scripts": {
     "start": "npx live-server --open=demo",
     "dev": "npx live-server --open=test",
-    "build:vendor": "webpack --config vendor/webpack.config.js "
+    "build:vendor": "webpack --config vendor/webpack.config.js",
+    "postversion": "git push --follow-tags"
   },
   "dependencies": {},
   "devDependencies": {
