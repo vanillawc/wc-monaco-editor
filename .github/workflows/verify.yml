@@ -1,0 +1,25 @@
+name: Verify
+
+on:
+  push:
+    tags:
+    - '!*'
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install
+        run: npm ci
+      # - name: Test
+      #   run: npm t
+      # - name: Lint
+      #   run: npm run lint
+      # - name: Types
+      #   run: npm run types
