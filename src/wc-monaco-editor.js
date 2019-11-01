@@ -52,10 +52,14 @@ export class WCMonacoEditor extends HTMLElement {
   }
   
   initialize() {
+    // set a unique id (defaults to 'editor')
     this.__element = document.createElement('div');
     this.__element.id = this.hasAttribute('id') ? `${this.getAttribute('id')}-editor` : 'editor';
-    this.__element.style = this.style.cssText;
+    // set styling (defaults to fit outer container)
+    this.__element.style = this.hasAttribute('style') ? this.style.cssText: 'width:100%;height:100%';
     this.appendChild(this.__element);
+
+    // create the editor
     this.__editor = monaco.editor.create(document.getElementById(this.__element.id), {
       language: this.getAttribute('language'),
       theme: 'vs-dark'
