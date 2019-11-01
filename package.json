@@ -1,0 +1,23 @@
+{
+  "name": "@vanillawc/wc-monaco-editor",
+  "version": "1.0.0-alpha",
+  "license": "MIT",
+  "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
+  "description": "A web vanilla Monaco Editor web component",
+  "keywords": [
+    "web-component",
+    "vanilla",
+    "editor",
+    "monaco"
+  ],
+  "repository": "https://github.com/vanillawc/wc-monaco-editor/",
+  "main": "src/wc-monaco-editor.js",
+  "module": "dist/wc-monaco-editor.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx live-server --open=demo",
+    "dev": "npx live-server --open=test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
