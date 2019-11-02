@@ -14,7 +14,7 @@ A Vanilla Web Component to embed a Monaco code editor into a web page
 ## Installation
 
 ```sh
-npm i @vanillawc/wc-markdown
+npm i @vanillawc/wc-monaco-editor
 ```
 
 This will create the `wc-monaco-editor` folder in `node_modules`.
