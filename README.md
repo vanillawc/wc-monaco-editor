@@ -7,7 +7,6 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
 <!-- [![Actions Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions) -->
 
-
 A Vanilla Web Component to embed a Monaco code editor into a web page
 
  <!-- TODO: Add video graphic here -->
@@ -21,8 +20,6 @@ npm i @vanillawc/wc-monaco-editor
 ```
 
 This will create the `wc-monaco-editor` folder in `node_modules`.
-
-*Note: To reduce bloat, the external libraries included in this project are marked as `devDependencies`. It is NOT necessary to install these if you're importing from the `dist/` directory.*
 
 -----
 
