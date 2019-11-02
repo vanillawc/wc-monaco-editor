@@ -18,6 +18,7 @@
     "start": "npx live-server --open=demo",
     "dev": "npx live-server --open=test",
     "build:vendor": "webpack --config vendor/webpack.config.js",
+    "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "postversion": "git push --follow-tags"
   },
   "dependencies": {},
