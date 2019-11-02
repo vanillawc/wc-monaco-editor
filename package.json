@@ -3,7 +3,7 @@
   "version": "1.0.0-rc3",
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
-  "description": "A web vanilla Monaco Editor web component",
+  "description": "A vanilla Monaco Editor web component",
   "keywords": [
     "web-component",
     "vanilla",
