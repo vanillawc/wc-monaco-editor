@@ -19,8 +19,12 @@ self.MonacoEnvironment = {
 }
 
 export class WCMonacoEditor extends HTMLElement {
-  __element = null;
-  __editor = null;
+
+  constructor() {
+    super();
+    this.__element = null;
+    this.__editor = null;
+  }
 
   static get observedAttributes() {
     return ['src', 'value'];
