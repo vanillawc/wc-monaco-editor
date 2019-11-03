@@ -1,3 +1,4 @@
 .github/
 demo/
 test/
+*.tgz
