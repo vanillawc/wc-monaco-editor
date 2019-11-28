@@ -5,7 +5,7 @@
 [![downloads](https://badgen.net/npm/dt/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@vanillawc/wc-monaco-editor/badge.svg)](https://snyk.io/test/npm/@vanillawc/wc-monaco-editor)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
-<!-- [![Actions Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions) -->
+[![Actions Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
 
 A Vanilla Web Component to embed a Monaco code editor into a web page
 
