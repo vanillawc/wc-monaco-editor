@@ -58,5 +58,5 @@ The demo can also be run locally with
 npm run start
 ```
 
-[WC-Monaco-Editor - Demo]: https://vanillawc.github.io/wc-monaco-editor/demo/demo.html
+[WC-Monaco-Editor - Demo]: https://vanillawc.github.io/wc-monaco-editor/demo/index.html
 
