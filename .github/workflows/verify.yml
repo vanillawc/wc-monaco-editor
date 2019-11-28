@@ -19,7 +19,7 @@ jobs:
         run: npm ci
       # - name: Test
       #   run: npm t
-      # - name: Lint
-      #   run: npm run lint
+      - name: Lint
+        run: npm run lint
       # - name: Types
       #   run: npm run types
