@@ -5,7 +5,7 @@
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "description": "A vanilla Monaco Editor web component",
   "keywords": [
-    "web-component",
+    "web-components",
     "vanilla",
     "editor",
     "monaco"
