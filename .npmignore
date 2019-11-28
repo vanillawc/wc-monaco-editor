@@ -2,3 +2,5 @@
 demo/
 test/
 *.tgz
+webpack.config.js
+rollup.config.js
