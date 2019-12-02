@@ -1,5 +1,3 @@
-# WC-Monaco-Editor
-
 [![GitHub release](https://img.shields.io/github/v/release/vanillawc/wc-monaco-editor.svg)](https://github.com/vanillawc/wc-monaco-editor/releases)
 [![npm](https://badgen.net/npm/v/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
 [![downloads](https://badgen.net/npm/dt/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
