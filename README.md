@@ -17,7 +17,7 @@ A Vanilla Web Component to embed a Monaco code editor into a web page
 npm i @vanillawc/wc-monaco-editor
 ```
 
-This will create the `wc-monaco-editor` folder in `node_modules`.
+Then import the `index.js` file at the root of the package.
 
 -----
 
