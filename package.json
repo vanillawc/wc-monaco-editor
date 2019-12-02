@@ -13,7 +13,6 @@
   "repository": "https://github.com/vanillawc/wc-monaco-editor/",
   "main": "src/wc-monaco-editor.js",
   "module": "dist/wc-monaco-editor.js",
-  "type": "module",
   "scripts": {
     "start": "npx live-server --open=demo",
     "dev": "npx live-server --open=dev",
@@ -28,7 +27,6 @@
   "devDependencies": {
     "css-loader": "^3.2.0",
     "monaco-editor": "^0.18.1",
-    "monaco-editor-esm": "^0.17.0",
     "semistandard": "^14.2.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
