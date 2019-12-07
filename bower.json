@@ -1,0 +1,14 @@
+{
+  "name": "@vanillawc/wc-monaco-editor",
+  "authors": [
+    "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)"
+  ],
+  "keywords": [
+    "web-components",
+    "vanilla",
+    "editor",
+    "monaco"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}
