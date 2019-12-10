@@ -1,10 +1,10 @@
-[![GitHub release](https://img.shields.io/github/v/release/vanillawc/wc-monaco-editor.svg)](https://github.com/vanillawc/wc-monaco-editor/releases)
-[![npm](https://badgen.net/npm/v/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
-[![downloads](https://badgen.net/npm/dt/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
-[![Known Vulnerabilities](https://snyk.io/test/npm/@vanillawc/wc-monaco-editor/badge.svg)](https://snyk.io/test/npm/@vanillawc/wc-monaco-editor)
+[![GitHub Releases](https://img.shields.io/github/v/release/vanillawc/wc-monaco-editor.svg)](https://github.com/vanillawc/wc-monaco-editor/releases)
+[![NPM Release](https://badgen.net/npm/v/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
+[![Downloads](https://badgen.net/npm/dt/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
 [![Published on WebComponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@vanillawc/wc-monaco-editor)
-[![Actions Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
+[![Latest Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Latest/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
+[![Release Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
 
 A Vanilla Web Component to embed a Monaco code editor into a web page
 
