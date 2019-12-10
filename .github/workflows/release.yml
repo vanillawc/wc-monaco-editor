@@ -14,7 +14,14 @@ jobs:
     - name: Setup
       uses: actions/setup-node@v1
       with:
-        version: 12.x
+        version: 13.2
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-npm-cache-
     - name: Verify
       run: |
         npm ci

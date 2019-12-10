@@ -1,9 +1,10 @@
-name: Verify
+name: Latest
 
 on:
   push:
-    tags:
-    - '!*'
+    branches:
+      - master
+
 jobs:
   verify:
     name: Verify
@@ -14,7 +15,14 @@ jobs:
       - name: Setup
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 13.2
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache-
       - name: Install
         run: npm ci
       # - name: Test
