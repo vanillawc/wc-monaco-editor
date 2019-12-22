@@ -14,8 +14,7 @@
   "main": "src/wc-monaco-editor.js",
   "module": "dist/wc-monaco-editor.js",
   "scripts": {
-    "start": "npx live-server --open=demo",
-    "dev": "npx live-server --open=dev",
+    "start": "npx live-server --open=dev",
     "lint": "semistandard",
     "build:src": "npx rollup --config rollup.config.js ",
     "build:vendor": "npx webpack --config vendor/webpack.config.js",
