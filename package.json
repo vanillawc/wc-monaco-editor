@@ -16,8 +16,8 @@
   "scripts": {
     "start": "npx live-server --open=dev",
     "lint": "semistandard",
-    "build:src": "npx rollup --config rollup.config.js ",
-    "build:vendor": "npx webpack --config vendor/webpack.config.js",
+    "build:src": "npx rollup --config .config/rollup.config.js ",
+    "build:vendor": "npx webpack --config .config/webpack.config.js",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm run lint",
     "postversion": "git push --follow-tags"
