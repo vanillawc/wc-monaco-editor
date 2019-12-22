@@ -1,6 +1,6 @@
+.config/
 .github/
+.vscode/
 demo/
-test/
+dev/
 *.tgz
-webpack.config.js
-rollup.config.js
