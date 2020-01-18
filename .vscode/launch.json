@@ -4,21 +4,21 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Open in Chrome",
-      "url": "http://localhost:8080/dev",
+      "name": "Chrome",
+      "url": "http://localhost:5500/dev",
       "webRoot": "${workspaceFolder}",
       "pathMapping": {
-        "/demo/": "${workspaceFolder}/dev/"
+        "/dev/": "${workspaceFolder}/dev/"
       }
     },
     {
       "type": "browser-preview",
       "request": "launch",
       "name": "Browser Preview",
-      "url": "http://localhost:8080/dev/",
+      "url": "http://localhost:5500/dev/",
       "webRoot": "${workspaceFolder}",
       "pathMapping": {
-        "/demo/": "${workspaceFolder}/dev/"
+        "/dev/": "${workspaceFolder}/dev/"
       }
     }
   ]
