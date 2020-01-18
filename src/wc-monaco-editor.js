@@ -1,22 +1,22 @@
 /* eslint no-undef: 0 */
-import '../vendor/monaco/editor-main.bundle.js';
+import '../monaco/editor.main.js';
 
 // eslint-disable-next-line
 self.MonacoEnvironment = {
   getWorkerUrl: function (moduleId, label) {
     if (label === 'json') {
-      return '../vendor/monaco/json.worker.bundle.js';
+      return '../monaco/json.worker.js';
     }
     if (label === 'css') {
-      return '../vendor/monaco/css.worker.bundle.js';
+      return '../monaco/css.worker.js';
     }
     if (label === 'html') {
-      return '../vendor/monaco/html.worker.bundle.js';
+      return '../monaco/html.worker.js';
     }
     if (label === 'typescript' || label === 'javascript') {
-      return '../vendor/monaco/ts.worker.bundle.js';
+      return '../monaco/ts.worker.js';
     }
-    return '../vendor/monaco/editor.worker.bundle.js';
+    return '../monaco/editor.worker.js';
   }
 };
 

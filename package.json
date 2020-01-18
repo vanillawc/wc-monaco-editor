@@ -17,7 +17,7 @@
     "start": "npx live-server --no-browser --open=dev",
     "lint": "semistandard",
     "build:src": "npx rollup --config .config/rollup.config.js ",
-    "build:vendor": "npx webpack --config .config/webpack.config.js",
+    "build:monaco": "webpack --config .config/monaco.config.js",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm run lint",
     "postversion": "git push --follow-tags"
@@ -27,14 +27,16 @@
     "css-loader": "^3.2.0",
     "monaco-editor": "^0.18.1",
     "semistandard": "^14.2.0",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "semistandard": {
     "ignore": [
       "demo/*",
       "dev/*",
       "dist/*",
-      "vendor/*"
+      "monaco/*"
     ]
   }
 }
