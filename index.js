@@ -6,22 +6,25 @@ var i={comments:{lineComment:"//",blockComment:["/*","*/"]},brackets:[["{","}"],
 
 /* eslint no-undef: 0 */
 
+const pathname = new URL(import.meta.url).href;
+const monacoDir = pathname.split('/').slice(0, -1).join('/') + '/monaco/';
+
 // eslint-disable-next-line
 self.MonacoEnvironment = {
   getWorkerUrl: function (moduleId, label) {
     if (label === 'json') {
-      return '../monaco/json.worker.js';
+      return `${monacoDir}json.worker.js`;
     }
     if (label === 'css') {
-      return '../monaco/css.worker.js';
+      return `${monacoDir}css.worker.js`;
     }
     if (label === 'html') {
-      return '../monaco/html.worker.js';
+      return `${monacoDir}html.worker.js`;
     }
     if (label === 'typescript' || label === 'javascript') {
-      return '../monaco/ts.worker.js';
+      return `${monacoDir}ts.worker.js`;
     }
-    return '../monaco/editor.worker.js';
+    return `${monacoDir}editor.worker.js`;
   }
 };
 
