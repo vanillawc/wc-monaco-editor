@@ -36,10 +36,12 @@
     "webpack-cli": "^3.3.10"
   },
   "semistandard": {
+    "parser": "babel-eslint",
     "ignore": [
       "demo/*",
       "dev/*",
       "monaco/*",
+      "src/monaco/*",
       "index.js",
       "index.min.js"
     ]
