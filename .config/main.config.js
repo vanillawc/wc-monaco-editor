@@ -1,7 +1,7 @@
 export default {
   input: 'src/wc-monaco-editor.js',
   output: {
-    file: 'dist/wc-monaco-editor.js',
+    file: 'index.js',
     format: 'esm'
   }
 };

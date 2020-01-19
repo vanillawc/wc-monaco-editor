@@ -16,7 +16,9 @@
   "scripts": {
     "start": "npx live-server --no-browser --port=5500 --open=dev",
     "lint": "semistandard",
-    "build:src": "npx rollup --config .config/rollup.config.js ",
+    "build": "npm run build:main && npm run build:min",
+    "build:main": "npx rollup --config .config/main.config.js",
+    "build:min": "npx rollup --config .config/min.config.js",
     "build:monaco": "webpack --config .config/monaco.config.js",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm run lint",
