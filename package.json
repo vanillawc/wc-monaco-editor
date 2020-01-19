@@ -38,8 +38,9 @@
     "ignore": [
       "demo/*",
       "dev/*",
-      "dist/*",
-      "monaco/*"
+      "monaco/*",
+      "index.js",
+      "index.min.js"
     ]
   }
 }
