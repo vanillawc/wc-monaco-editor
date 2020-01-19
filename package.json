@@ -26,6 +26,7 @@
   "devDependencies": {
     "css-loader": "^3.2.0",
     "monaco-editor": "^0.18.1",
+    "rollup-plugin-terser": "^5.2.0",
     "semistandard": "^14.2.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.5",
