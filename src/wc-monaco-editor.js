@@ -49,21 +49,19 @@ export class WCMonacoEditor extends HTMLElement {
   constructor () {
     super();
     this.__initialized = false;
-    this.__element = document.createElement('div');
-    this.__element.id = this.hasAttribute('id')
-      ? `${this.getAttribute('id')}-editor`
-      : 'editor';
-    this.__element.style = this.hasAttribute('style')
-      ? this.style.cssText
-      : 'width:100%;height:100%';
-    this.appendChild(this.__element);
-    this.__editor = monaco.editor.create(document.getElementById(this.__element.id), {
-      language: this.getAttribute('language'),
-      theme: 'vs-dark'
-    });
   }
 
   async connectedCallback () {
+    this.style.display = 'block';
+    if (!this.id) { this.id = 'editor'; }
+    if (!this.style.width) { this.style.width = '100%'; }
+    if (!this.style.height) { this.style.height = '100%'; }
+
+    this.__editor = monaco.editor.create(document.getElementById(this.id), {
+      language: this.getAttribute('language'),
+      theme: 'vs-dark'
+    });
+
     if (this.hasAttribute('src')) {
       this.setSrc();
     }
