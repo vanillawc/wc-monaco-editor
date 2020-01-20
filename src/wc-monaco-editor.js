@@ -49,6 +49,7 @@ export class WCMonacoEditor extends HTMLElement {
   constructor () {
     super();
     this.__initialized = false;
+    this.__editor = null;
   }
 
   async connectedCallback () {
@@ -59,7 +60,8 @@ export class WCMonacoEditor extends HTMLElement {
 
     this.__editor = monaco.editor.create(document.getElementById(this.id), {
       language: this.getAttribute('language'),
-      theme: 'vs-dark'
+      theme: 'vs-dark',
+      automaticLayout: true
     });
 
     if (this.hasAttribute('src')) {
