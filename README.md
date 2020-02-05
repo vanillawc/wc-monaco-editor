@@ -31,9 +31,9 @@ Then import the `index.js` file at the root of the package.
 **Attributes**
 
 - `id` - the editor id (default `editor`)
-- `src` - load an external source file
+- `src` - load the source from an external file
 - `language` - set the source language
-- `style` - CSS styling (default `height:100%;width:100%;`)
+- `style` - CSS styling (default `height: 100%; width: 100%;`)
 
 *Note: The ID attribute is required if there are multiple editors*
 

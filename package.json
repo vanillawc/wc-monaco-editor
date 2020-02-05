@@ -2,7 +2,7 @@
   "name": "@vanillawc/wc-monaco-editor",
   "version": "1.4.0",
   "license": "MIT",
-  "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
+  "author": "Evan Plaice <evanplaice@gmail.com> (https://evanplaice.com/)",
   "description": "A vanilla Monaco Editor web component",
   "keywords": [
     "web-components",
