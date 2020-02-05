@@ -1,14 +1,12 @@
-[![GitHub Releases](https://img.shields.io/github/v/release/vanillawc/wc-monaco-editor.svg)](https://github.com/vanillawc/wc-monaco-editor/releases)
+[![GitHub Releases](https://badgen.net/github/tag/vanillawc/wc-monaco-editor)](https://github.com/vanillawc/wc-monaco-editor/releases)
 [![NPM Release](https://badgen.net/npm/v/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
-[![Downloads](https://badgen.net/npm/dt/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
+[![MIT License](https://badgen.net/github/license/vanillawc/wc-monaco-editor)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
 [![Published on WebComponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/vanillawc/wc-monaco-editor)
 [![Latest Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Latest/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
 [![Release Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
+<!-- [![Bundlephobia](https://badgen.net/bundlephobia/minzip/@vanillawc/wc-monaco-editor)](https://bundlephobia.com/result?p=@vanillawc/wc-monaco-editor) -->
 
 A Vanilla Web Component to embed a Monaco code editor into a web page
-
- <!-- TODO: Add video graphic here -->
 
 -----
 
