@@ -6,8 +6,7 @@ var i={comments:{lineComment:"//",blockComment:["/*","*/"]},brackets:[["{","}"],
 
 /* eslint no-undef: 0 */
 
-const pathname = new URL(import.meta.url).href;
-const monacoDir = pathname.split('/').slice(0, -1).join('/') + '/monaco/';
+const monacoDir = new URL('monaco/', import.meta.url);
 
 // eslint-disable-next-line
 self.MonacoEnvironment = {
