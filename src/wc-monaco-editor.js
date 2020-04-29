@@ -40,15 +40,15 @@ export class WCMonacoEditor extends HTMLElement {
     this.setSrc();
   }
 
-  get value () { return this.__editor.getValue(); }
+  get value () { return this.editor.getValue(); }
   set value (value) {
-    this.__editor.setValue(value);
+    this.editor.setValue(value);
   }
 
   constructor () {
     super();
     this.__initialized = false;
-    this.__editor = null;
+    this.editor = null;
   }
 
   async connectedCallback () {
@@ -57,7 +57,7 @@ export class WCMonacoEditor extends HTMLElement {
     if (!this.style.width) { this.style.width = '100%'; }
     if (!this.style.height) { this.style.height = '100%'; }
 
-    this.__editor = monaco.editor.create(document.getElementById(this.id), {
+    this.editor = monaco.editor.create(document.getElementById(this.id), {
       language: this.getAttribute('language'),
       theme: 'vs-dark',
       automaticLayout: true
@@ -72,7 +72,7 @@ export class WCMonacoEditor extends HTMLElement {
   async setSrc () {
     const src = this.getAttribute('src');
     const contents = await this.fetchSrc(src);
-    this.__editor.setValue(contents);
+    this.editor.setValue(contents);
   }
 
   async fetchSrc (src) {
