@@ -37,6 +37,7 @@ Then import the `index.js` file at the root of the package.
 
 **Properties**
 
+- `editor` - the Monaco editor instance
 - `value` - get/set the editor's contents
 
 ### Load Javascript from an external source
