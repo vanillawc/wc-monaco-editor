@@ -31,6 +31,7 @@ Then import the `index.js` file at the root of the package.
 - `id` - the editor id (default `editor`)
 - `src` - load the source from an external file
 - `language` - set the source language
+- `tab-size` - set the tab-size (in spaces) (default `2`)
 - `style` - CSS styling (default `height: 100%; width: 100%;`)
 
 *Note: The ID attribute is required if there are multiple editors*
@@ -38,7 +39,9 @@ Then import the `index.js` file at the root of the package.
 **Properties**
 
 - `editor` - the Monaco editor instance
+- `src` - get/set the `src` attribute from JS
 - `value` - get/set the editor's contents
+- `tabSize` - get/set the `tab-index` attribute from JS
 
 ### Load Javascript from an external source
 
@@ -57,4 +60,3 @@ npm run start
 ```
 
 [WC-Monaco-Editor - Demo]: https://vanillawc.github.io/wc-monaco-editor/demo/index.html
-
