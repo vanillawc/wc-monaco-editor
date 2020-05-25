@@ -1,9 +1,6 @@
 name: Latest
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   verify:
@@ -15,19 +12,19 @@ jobs:
       - name: Setup
         uses: actions/setup-node@v1
         with:
-          node-version: 13.2
+          node-version: 14
       - name: Cache
         uses: actions/cache@v1
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package.json') }}
           restore-keys: |
             ${{ runner.OS }}-npm-cache-
       - name: Install
-        run: npm ci
-      # - name: Test
-      #   run: npm t
+        run: npm i
+      - name: Test
+        run: npm run test --if-present
       - name: Lint
-        run: npm run lint
-      # - name: Types
-      #   run: npm run types
+        run: npm run lint --if-present
+      - name: Types
+        run: npm run types --if-present
