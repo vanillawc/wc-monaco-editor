@@ -66,7 +66,8 @@ export class WCMonacoEditor extends HTMLElement {
       language: this.getAttribute('language'),
       theme: 'vs-dark',
       automaticLayout: true,
-      fontSize: this.getAttribute('font-size')
+      fontSize: this.getAttribute('font-size'),
+      wordWrap: this.hasAttribute('word-wrap')
     });
 
     if (this.hasAttribute('tab-size')) {
