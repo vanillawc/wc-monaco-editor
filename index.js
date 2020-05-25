@@ -50,7 +50,7 @@ class WCMonacoEditor extends HTMLElement {
     this.editor.setValue(value);
   }
 
-  get tabSize () { return this.editor.tabSize; }
+  get tabSize () { return this.editor.getModel()._options.tabSize; }
   set tabSize (value) {
     this.editor.getModel().updateOptions({ tabSize: value });
   }
@@ -70,7 +70,8 @@ class WCMonacoEditor extends HTMLElement {
     this.editor = monaco.editor.create(document.getElementById(this.id), {
       language: this.getAttribute('language'),
       theme: 'vs-dark',
-      automaticLayout: true
+      automaticLayout: true,
+      fontSize: this.getAttribute('font-size')
     });
 
     if (this.hasAttribute('tab-size')) {
