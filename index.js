@@ -52,7 +52,7 @@ class WCMonacoEditor extends HTMLElement {
 
   get tabSize () { return this.editor.tabSize; }
   set tabSize (value) {
-    this.editor.getModel().updateOptions({ tabSize: 2 });
+    this.editor.getModel().updateOptions({ tabSize: value });
   }
 
   constructor () {
