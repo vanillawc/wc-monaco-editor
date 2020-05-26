@@ -72,6 +72,7 @@ class WCMonacoEditor extends HTMLElement {
       theme: 'vs-dark',
       automaticLayout: true,
       lineNumbersMinChars: 3,
+      mouseWheelZoom: true,
       fontSize: this.getAttribute('font-size'),
       wordWrap: this.hasAttribute('word-wrap'),
       wrappingIndent: this.getAttribute('wrap-indent')
