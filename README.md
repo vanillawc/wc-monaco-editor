@@ -53,8 +53,6 @@ Then import the `index.js` file at the root of the package.
 <wc-monaco-editor src="./sample.js" language="javascript"></wc-monaco-editor>
 ```
 
-***Demo: [WC-Monaco-Editor - Demo][]***
-
 ## Advanced Configuration
 
 A config can be provided for advanced use cases that require the full spectrum of Monaco Editor options.
@@ -83,6 +81,8 @@ A config can be provided for advanced use cases that require the full spectrum o
 *Note: See the [EditorOptions][] official documentation for all available options.* 
 
 ## Demos
+
+***Demo: [WC-Monaco-Editor - Demo][]***
 
 The demo can also be run locally with
 
