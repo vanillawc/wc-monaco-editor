@@ -2,9 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: {
     "editor.main": 'monaco-editor/esm/vs/editor/editor.main',
-    // Package each language's worker and give these filenames in `getWorkerUrl`
     "editor.worker": 'monaco-editor/esm/vs/editor/editor.worker',
     "json.worker": 'monaco-editor/esm/vs/language/json/json.worker',
     "css.worker": 'monaco-editor/esm/vs/language/css/css.worker',
@@ -18,10 +18,16 @@ module.exports = {
     publicPath: "/monaco/"
   },
   module: {
-    rules: [{
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
-    }]
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.ttf$/,
+        use: ['file-loader']
+      }
+    ]
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
