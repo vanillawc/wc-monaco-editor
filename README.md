@@ -50,10 +50,37 @@ Then import the `index.js` file at the root of the package.
 ### Load Javascript from an external source
 
 ```html
-<wc-monaco-editor language="javascript" src="./assets/sample.js"></wc-monaco-editor>
+<wc-monaco-editor src="./sample.js" language="javascript"></wc-monaco-editor>
 ```
 
 ***Demo: [WC-Monaco-Editor - Demo][]***
+
+## Advanced Configuration
+
+A config can be provided for advanced use cases that require the full spectrum of Monaco Editor options.
+
+```html
+<wc-monaco-editor config="./editor-config.json"></wc-monaco-editor>
+```
+
+*config.json*
+```json
+{
+  "language": "javascript",
+  "minimap": {
+    "enabled": false
+  },
+  "tabSize": 2,
+  "fontSize": 16,
+  "wordWrap": "on",
+  "lineNumbersMinChars": 3,
+  "wrappingIndent": "same",
+  "mouseWheelZoom": true,
+  "copyWithSyntaxHighlighting": false
+}
+```
+
+*Note: See the [EditorOptions][] official documentation for all available options.* 
 
 ## Demos
 
@@ -64,3 +91,4 @@ npm run start
 ```
 
 [WC-Monaco-Editor - Demo]: https://vanillawc.github.io/wc-monaco-editor/demo/index.html
+[EditorOptions]: https://microsoft.github.io/monaco-editor/api/modules/monaco.editor.html#editoroptions

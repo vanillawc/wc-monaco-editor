@@ -67,17 +67,22 @@ class WCMonacoEditor extends HTMLElement {
     if (!this.style.width) { this.style.width = '100%'; }
     if (!this.style.height) { this.style.height = '100%'; }
 
-    this.editor = monaco.editor.create(document.getElementById(this.id), {
-      language: this.getAttribute('language'),
-      theme: 'vs-dark',
-      automaticLayout: true,
-      lineNumbersMinChars: 3,
-      mouseWheelZoom: true,
-      fontSize: this.getAttribute('font-size'),
-      minimap: { enabled: !this.hasAttribute('no-minimap')},
-      wordWrap: this.hasAttribute('word-wrap'),
-      wrappingIndent: this.getAttribute('wrap-indent')
-    });
+    if (this.hasAttribute('config')) {
+      const config = await this.fetchConfig(this.getAttribute('config'));
+      this.editor = monaco.editor.create(document.getElementById(this.id), config);
+    } else {
+      this.editor = monaco.editor.create(document.getElementById(this.id), {
+        language: this.getAttribute('language'),
+        theme: 'vs-dark',
+        automaticLayout: true,
+        lineNumbersMinChars: 3,
+        mouseWheelZoom: true,
+        fontSize: this.getAttribute('font-size'),
+        minimap: { enabled: !this.hasAttribute('no-minimap') },
+        wordWrap: this.hasAttribute('word-wrap'),
+        wrappingIndent: this.getAttribute('wrap-indent')
+      });
+    }
 
     if (this.hasAttribute('tab-size')) {
       this.tabSize = this.getAttribute('tab-size');
@@ -98,6 +103,11 @@ class WCMonacoEditor extends HTMLElement {
   async fetchSrc (src) {
     const response = await fetch(src);
     return response.text();
+  }
+
+  async fetchConfig (config) {
+    const response = await fetch(config);
+    return response.json();
   }
 }
 
