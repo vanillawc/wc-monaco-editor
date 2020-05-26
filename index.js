@@ -72,7 +72,8 @@ class WCMonacoEditor extends HTMLElement {
       theme: 'vs-dark',
       automaticLayout: true,
       fontSize: this.getAttribute('font-size'),
-      wordWrap: this.hasAttribute('word-wrap')
+      wordWrap: this.hasAttribute('word-wrap'),
+      wrappingIndent: this.getAttribute('wrap-indent')
     });
 
     if (this.hasAttribute('tab-size')) {
