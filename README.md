@@ -34,7 +34,8 @@ Then import the `index.js` file at the root of the package.
 - `font-size` - set the font size (default `14px`);
 - `tab-size` - set the tab size (in spaces) (default `2`)
 - `style` - CSS styling (default `height: 100%; width: 100%;`)
-- `word-wrap` - Enables word wrapping when present
+- `no-minimap` - disables the source minimap when present
+- `word-wrap` - enables word wrapping when present
 - `wrap-indent` - set the indent `['none','same','indent','deepindent']` for word wrapped lines (default `none`)
 
 *Note: The ID attribute is required if there are multiple editors*

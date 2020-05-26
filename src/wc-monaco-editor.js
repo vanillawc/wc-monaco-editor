@@ -69,6 +69,7 @@ export class WCMonacoEditor extends HTMLElement {
       lineNumbersMinChars: 3,
       mouseWheelZoom: true,
       fontSize: this.getAttribute('font-size'),
+      minimap: { enabled: !this.hasAttribute('no-minimap') },
       wordWrap: this.hasAttribute('word-wrap'),
       wrappingIndent: this.getAttribute('wrap-indent')
     });
