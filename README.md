@@ -34,10 +34,6 @@ Try it out [here](https://vanillawc.github.io/wc-monaco-editor/demo/index.html)
 
 ## Usage
 
-```html
-<wc-monaco-editor language="markdown"></wc-monaco-editor>
-```
-
 **Attributes**
 
 - `id` - the editor id (default `editor`)
@@ -59,18 +55,37 @@ Try it out [here](https://vanillawc.github.io/wc-monaco-editor/demo/index.html)
 - `value` - get/set the editor's contents
 - `tabSize` - get/set the `tab-index` attribute from JS
 
-### Load Javascript from an external source
+
+### Basic Usage
+
+To edit plaintext
 
 ```html
-<wc-monaco-editor src="./sample.js" language="javascript"></wc-monaco-editor>
+<wc-monaco-editor></wc-monaco-editor>
 ```
 
-## Advanced Configuration
+### Language Support
+
+Language support enables syntax highlighting, code completion, etc.
+
+```html
+<wc-monaco-editor language="javascript"></wc-monaco-editor>
+```
+
+### External Source
+
+Load an external source file with the `src` attribute
+
+```html
+<wc-monaco-editor src="sample.js" language="javascript"></wc-monaco-editor>
+```
+
+### Advanced Configuration
 
 A config can be provided for advanced use cases that require the full spectrum of Monaco Editor options.
 
 ```html
-<wc-monaco-editor config="./editor-config.json"></wc-monaco-editor>
+<wc-monaco-editor config="config.json"></wc-monaco-editor>
 ```
 
 *config.json*
