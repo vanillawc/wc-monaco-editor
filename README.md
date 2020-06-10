@@ -31,7 +31,6 @@ npm i @vanillawc/wc-monaco-editor
 
 Try it out [here](https://vanillawc.github.io/wc-monaco-editor/demo/index.html)
 
-
 ## Usage
 
 **Attributes**
@@ -54,7 +53,6 @@ Try it out [here](https://vanillawc.github.io/wc-monaco-editor/demo/index.html)
 - `src` - get/set the `src` attribute from JS
 - `value` - get/set the editor's contents
 - `tabSize` - get/set the `tab-index` attribute from JS
-
 
 ### Basic Usage
 
