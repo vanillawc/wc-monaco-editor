@@ -1,24 +1,36 @@
-[![GitHub Releases](https://badgen.net/github/tag/vanillawc/wc-monaco-editor)](https://github.com/vanillawc/wc-monaco-editor/releases)
-[![NPM Release](https://badgen.net/npm/v/@vanillawc/wc-monaco-editor)](https://www.npmjs.com/package/@vanillawc/wc-monaco-editor)
-[![MIT License](https://badgen.net/github/license/vanillawc/wc-monaco-editor)](https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE)
-[![Published on WebComponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/vanillawc/wc-monaco-editor)
-[![Latest Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Latest/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
-[![Release Status](https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg)](https://github.com/vanillawc/wc-monaco-editor/actions)
-<!-- [![Bundlephobia](https://badgen.net/bundlephobia/minzip/@vanillawc/wc-monaco-editor)](https://bundlephobia.com/result?p=@vanillawc/wc-monaco-editor) -->
+<h1 align="center">&lt;wc-monaco-editor&gt;: Easily Embed a Monaco Editor</h1>
 
-A Vanilla Web Component to embed a Monaco code editor into a web page
-
------
+<div align="center">
+  <a href="https://github.com/vanillawc/wc-monaco-editor/releases"><img src="https://badgen.net/github/tag/vanillawc/wc-monaco-editor" alt="GitHub Releases"></a>
+  <a href="https://www.npmjs.com/package/@vanillawc/wc-monaco-editor"><img src="https://badgen.net/npm/v/@vanillawc/wc-monaco-editor" alt="NPM Releases"></a>
+  <a href="https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE"><img src="https://badgen.net/github/license/vanillawc/wc-monaco-editor" alt="MIT License"></a>
+  <a href="https://www.webcomponents.org/element/vanillawc/wc-monaco-editor"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
+  <a href="https://github.com/vanillawc/wc-monaco-editor/actions"><img src="https://github.com/vanillawc/wc-monaco-editor/workflows/Latest/badge.svg" alt="Latest Status"></a>
+  <a href="https://github.com/vanillawc/wc-monaco-editor/actions"><img src="https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg" alt="Release Status"></a>
+  <!-- <a href="https://bundlephobia.com/result?p=@vanillawc/wc-monaco-editor"><img src="https://badgen.net/bundlephobia/minzip/@vanillawc/wc-monaco-editor" alt="Bundlephobia"></a> -->
+</div>
 
 ## Installation
 
+*Installation*
 ```sh
 npm i @vanillawc/wc-monaco-editor
 ```
 
-Then import the `index.js` file at the root of the package.
+*Import from NPM*
+```html
+<script type="module" src="node_modules/@vanillawc/wc-monaco-editor/index.js"></script>
+```
 
------
+*Import from CDN*
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-monaco-editor/index.js"></script>
+```
+
+## Demo
+
+Try it out [here](https://vanillawc.github.io/wc-monaco-editor/demo/index.html)
+
 
 ## Usage
 
@@ -80,15 +92,4 @@ A config can be provided for advanced use cases that require the full spectrum o
 
 *Note: See the [EditorOptions][] official documentation for all available options.* 
 
-## Demos
-
-***Demo: [WC-Monaco-Editor - Demo][]***
-
-The demo can also be run locally with
-
-```sh
-npm run start
-```
-
-[WC-Monaco-Editor - Demo]: https://vanillawc.github.io/wc-monaco-editor/demo/index.html
 [EditorOptions]: https://microsoft.github.io/monaco-editor/api/modules/monaco.editor.html#editoroptions
