@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx live-server --no-browser --port=5500 --open=dev",
-    "lint": "semistandard",
+    "lint": "esmtk lint",
     "build": "npm run build:main && npm run build:min",
     "build:main": "npx rollup --config .config/main.config.js",
     "build:min": "npx rollup --config .config/min.config.js",
@@ -23,28 +23,26 @@
     "preversion": "npm run lint",
     "postversion": "git push --follow-tags"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "css": "^2.2.4",
     "css-loader": "^3.5.3",
+    "esmtk": "^0.1.1",
     "file-loader": "^6.0.0",
     "monaco-editor": "^0.20.0",
     "rollup-plugin-terser": "^5.2.0",
-    "semistandard": "^14.2.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
-  "semistandard": {
+  "standard": {
     "parser": "babel-eslint",
     "ignore": [
       "demo/*",
       "dev/*",
       "monaco/*",
       "src/monaco/*",
-      "index.js",
-      "index.min.js"
+      "index.js"
     ]
   }
 }
