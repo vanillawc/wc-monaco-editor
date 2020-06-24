@@ -1,4 +1,4 @@
-<h1 align="center">&lt;wc-monaco-editor&gt;: Easily Embed a Monaco Editor</h1>
+<h1 align="center">&lt;wc-monaco-editor&gt; Easily Embed a Monaco Editor</h1>
 
 <div align="center">
   <a href="https://github.com/vanillawc/wc-monaco-editor/releases"><img src="https://badgen.net/github/tag/vanillawc/wc-monaco-editor" alt="GitHub Releases"></a>
