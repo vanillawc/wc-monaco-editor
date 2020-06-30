@@ -3,10 +3,11 @@
 <div align="center">
   <a href="https://github.com/vanillawc/wc-monaco-editor/releases"><img src="https://badgen.net/github/tag/vanillawc/wc-monaco-editor" alt="GitHub Releases"></a>
   <a href="https://www.npmjs.com/package/@vanillawc/wc-monaco-editor"><img src="https://badgen.net/npm/v/@vanillawc/wc-monaco-editor" alt="NPM Releases"></a>
-  <a href="https://raw.githubusercontent.com/vanillawc/wc-monaco-editor/master/LICENSE"><img src="https://badgen.net/github/license/vanillawc/wc-monaco-editor" alt="MIT License"></a>
-  <a href="https://www.webcomponents.org/element/vanillawc/wc-monaco-editor"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
   <a href="https://github.com/vanillawc/wc-monaco-editor/actions"><img src="https://github.com/vanillawc/wc-monaco-editor/workflows/Latest/badge.svg" alt="Latest Status"></a>
   <a href="https://github.com/vanillawc/wc-monaco-editor/actions"><img src="https://github.com/vanillawc/wc-monaco-editor/workflows/Release/badge.svg" alt="Release Status"></a>
+
+  <a href="https://discord.gg/8ur9M5"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>
+  <a href="https://www.webcomponents.org/element/vanillawc/wc-monaco-editor"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
   <!-- <a href="https://bundlephobia.com/result?p=@vanillawc/wc-monaco-editor"><img src="https://badgen.net/bundlephobia/minzip/@vanillawc/wc-monaco-editor" alt="Bundlephobia"></a> -->
 </div>
 
@@ -24,7 +25,7 @@ npm i @vanillawc/wc-monaco-editor
 
 *Import from CDN*
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-monaco-editor/index.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-monaco-editor@1/index.js"></script>
 ```
 
 ## Demo
@@ -106,3 +107,7 @@ A config can be provided for advanced use cases that require the full spectrum o
 *Note: See the [EditorOptions][] official documentation for all available options.* 
 
 [EditorOptions]: https://microsoft.github.io/monaco-editor/api/modules/monaco.editor.html#editoroptions
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/vanillawc/vanillawc/blob/main/CONTRIBUTING.md)
