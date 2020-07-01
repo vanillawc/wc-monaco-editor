@@ -1,6 +1,6 @@
 {
   "name": "@vanillawc/wc-monaco-editor",
-  "version": "1.10.9",
+  "version": "1.10.10",
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (https://evanplaice.com/)",
   "description": "A vanilla Monaco Editor web component",
