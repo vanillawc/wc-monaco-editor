@@ -1,24 +1,24 @@
 /* eslint no-undef: 0 */
-import '../monaco/editor.main.js'
+import './monaco/editor.main.js'
 
-const monacoDir = new URL('monaco/', import.meta.url)
+const workersDir = new URL('monaco/workers/', import.meta.url)
 
 // eslint-disable-next-line
 self.MonacoEnvironment = {
   getWorkerUrl: function (moduleId, label) {
-    if (label === 'json') {
-      return `${monacoDir}json.worker.js`
+    switch (label) {
+      case 'json':
+        return `${workersDir}json.worker.js`
+      case 'css':
+        return `${workersDir}css.worker.js`
+      case 'html':
+        return `${workersDir}html.worker.js`
+      case 'typescript':
+      case 'javascript':
+        return `${workersDir}ts.worker.js`
+      default:
+        return `${workersDir}editor.worker.js`
     }
-    if (label === 'css') {
-      return `${monacoDir}css.worker.js`
-    }
-    if (label === 'html') {
-      return `${monacoDir}html.worker.js`
-    }
-    if (label === 'typescript' || label === 'javascript') {
-      return `${monacoDir}ts.worker.js`
-    }
-    return `${monacoDir}editor.worker.js`
   }
 }
 
