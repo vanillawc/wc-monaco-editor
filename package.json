@@ -15,9 +15,9 @@
   "scripts": {
     "start": "npx live-server --no-browser --port=5500 --open=dev",
     "lint": "esmtk lint",
-    "build": "npm run build:main && npm run build:min && npm run copy",
-    "build:main": "npx rollup --config .config/main.config.js",
-    "build:min": "npx rollup --config .config/min.config.js",
+    "build": "npm run copy && npm run bundle && npm run minify",
+    "bundle": "esmtk bundle src/wc-monaco-editor.js index.js",
+    "minify": "esmtk minify src/wc-monaco-editor.js index.min.js",
     "copy": "npm run cp:editor && npm run cp:font && npm run cp:workers",
     "cp:editor": "cp node_modules/monaco-editor-es/editor.main.js monaco/",
     "cp:font": "cp node_modules/monaco-editor-es/*.ttf monaco/",
@@ -27,9 +27,8 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "esmtk": "^0.1.1",
-    "monaco-editor-es": "^0.20.0",
-    "rollup-plugin-terser": "^5.2.0"
+    "esmtk": "^0.4.3",
+    "monaco-editor-es": "^0.20.0"
   },
   "standard": {
     "ignore": [
