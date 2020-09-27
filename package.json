@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "esmtk": "^0.4.3",
-    "monaco-editor-es": "^0.20.0"
+    "monaco-editor-es": "^0.21.2"
   },
   "standard": {
     "ignore": [
