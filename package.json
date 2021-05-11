@@ -15,20 +15,20 @@
   "scripts": {
     "start": "npx live-server --no-browser --port=5500 --open=dev",
     "lint": "esmtk lint",
-    "build": "npm run copy && npm run bundle && npm run minify",
-    "bundle": "esmtk bundle src/wc-monaco-editor.js index.js",
-    "minify": "esmtk minify src/wc-monaco-editor.js index.min.js",
-    "copy": "npm run cp:editor && npm run cp:font && npm run cp:workers",
-    "cp:editor": "cp node_modules/monaco-editor-es/editor.main.js monaco/",
-    "cp:font": "cp node_modules/monaco-editor-es/*.ttf monaco/",
-    "cp:workers": "cp -r node_modules/monaco-editor-es/workers/* monaco/workers/",
+    "build": "npm run build:esm && npm run build:min",
+    "build:esm": "esmtk bundle src/wc-monaco-editor.js index.js",
+    "build:min": "esmtk minify src/wc-monaco-editor.js index.min.js",
+    "copy": "npm run copy:editor && npm run copy:font && npm run copy:workers",
+    "copy:editor": "cp node_modules/monaco-editor-es/editor.main.js monaco/",
+    "copy:font": "cp node_modules/monaco-editor-es/*.ttf monaco/",
+    "copy:workers": "cp -r node_modules/monaco-editor-es/workers/* monaco/workers/",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm run lint",
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "esmtk": "^0.4.3",
-    "monaco-editor-es": "^0.21.2"
+    "esmtk": "^0.5.6",
+    "monaco-editor-es": "^0.21.3"
   },
   "standard": {
     "ignore": [
